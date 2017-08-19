@@ -11,4 +11,19 @@ package estructurasdedatos.cap1.complejidad;
  */
 public class Condicionales {
     
+    public Condicionales (){
+        System.out.println("Hola soy un objeto de la clase condicionales");
+    }
+    public void EjercicioUno(){
+        System.out.println("Ejecutando ejercicio 1");
+            //this.ejecutarejercicio2();//Llamar una funcion que esta en el ejercicio 2
+            this.EjercicioUno();
+    }
+    
+    public void ejecutarejercicio2(){
+        System.out.println("Ejecutando ejercicio 2");
+    }
+    public void ejecutarejercicio3(){
+        System.out.println("Ejecutando ejercicio 3");
+    }
 }
