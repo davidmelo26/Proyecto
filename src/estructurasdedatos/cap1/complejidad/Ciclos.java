@@ -11,4 +11,24 @@ package estructurasdedatos.cap1.complejidad;
  */
 public class Ciclos {
     
+    public Ciclos (){
+        System.out.println("Hola soy un objeto de la clase ciclo");
+    }
+
+    public void Ejercicio4(){
+        System.out.println("Ejecutando ejercicio 4");
+    }
+     
+    public void Ejercicio5(){
+        System.out.println("Ejecutando ejercicio 5");
+    }
+    //
+        public void Ejercicio6(){
+        System.out.println("Ejecutando ejercicio 6");
+    }
+        
+        public void Ejercicio7(){
+        System.out.println("Ejecutando ejercicio 7");
+    }        
+    
 }

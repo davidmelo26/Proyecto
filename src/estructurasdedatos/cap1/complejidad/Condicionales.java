@@ -20,10 +20,10 @@ public class Condicionales {
             this.EjercicioUno();
     }
     
-    public void ejecutarejercicio2(){
+    public void EjercicioDos(){
         System.out.println("Ejecutando ejercicio 2");
     }
-    public void ejecutarejercicio3(){
+        public void EjercicioTres(){
         System.out.println("Ejecutando ejercicio 3");
     }
 }
