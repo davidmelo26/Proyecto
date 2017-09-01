@@ -17,7 +17,7 @@ public class Persona {
     private String direccion;
     
     //constructor
-    public Persona1 (String nombrePersona, String cedulaPersona, String telefonoPersona, String direccionPersona){
+    public Persona (String nombrePersona, String cedulaPersona, String telefonoPersona, String direccionPersona){
         nombre = nombrePersona;
         cedula = cedulaPersona;
         telefono = telefonoPersona;
