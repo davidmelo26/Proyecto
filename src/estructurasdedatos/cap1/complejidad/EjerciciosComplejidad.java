@@ -64,6 +64,7 @@ public class EjerciciosComplejidad {
              System.out.println("(O(Ln n)");
            }
        }
-    }
+    }   // Referencia https://stackoverflow.com/questions/19021150/big-oh-for-n-log-n
+       // Referencia https://rootear.com/desarrollo/complejidades-algoritmos 
 }
 
