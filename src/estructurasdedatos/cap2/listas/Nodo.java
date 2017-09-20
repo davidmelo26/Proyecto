@@ -11,8 +11,8 @@ package estructurasdedatos.cap2.listas;
  */
 public class Nodo {
     
-    private int dato;
-    private Nodo enlace;
+    int dato;
+    Nodo enlace;
     
     public void Nodo(){
         this.dato = 0;
@@ -33,6 +33,8 @@ public class Nodo {
     public void setEnlace(Nodo enlace) {
         this.enlace = enlace;
     }   
+
+
 }
     
     
