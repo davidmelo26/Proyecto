@@ -11,11 +11,14 @@ package estructurasdedatos.cap2.listas;
  */
 public class Nodo {
     
-    int dato;
-    Nodo enlace;
+    private int dato;
+    private Nodo enlace;
+    private Nodo anterior;
+    
     
     public void Nodo(){
         this.dato = 0;
+        this.anterior = null;
         this.enlace = null;
     }
     public int getDato() {
@@ -25,16 +28,22 @@ public class Nodo {
     public void setDato(int dato) {
         this.dato = dato;
     }
+    
+    public Nodo getAnterior() {
+        return anterior;
+    }
 
-    public Nodo getEnlace() {
+    public void setAnterior() {
+        this.anterior = anterior;
+    }
+
+    public Nodo getEnlace(){
         return enlace;
     }
 
-    public void setEnlace(Nodo enlace) {
+    public void setEnlace(){
         this.enlace = enlace;
-    }   
-
-
+    }  
 }
     
     
