@@ -26,15 +26,15 @@ public class ListaSimple {
     public void InsertarNodo(int dato){
         
         Nodo nuevo = new Nodo();
-        nuevo.setdato(dato);
+        nuevo.dato = dato;
         
-        if(cabeza==null){
-            cabeza=nuevo;
-            cabeza.enlace=null;
+        if(cabeza == null){
+            cabeza = nuevo;
+            cabeza.enlace = null;
             cola=cabeza;
         }else{
-            cola.enlace=nuevo;
-            nuevo.enlace=null;
+            cola.enlace = nuevo;
+            nuevo.enlace = null;
             cola=nuevo;
         }
     }
@@ -52,42 +52,49 @@ public class ListaSimple {
         
     
     public int buscar (int dato){
-        Nodo actual = new Nodo();
-        actual = cabeza;
-        while(actual != null){
-            if (actual.dato==dato){
+        Nodo auxiliar = new Nodo();
+        auxiliar = cabeza;
+        while(auxiliar != null){
+            if (auxiliar.dato == dato){
                 System.out.println("\n Nodo encontrado");
             }
-            actual=actual.enlace;
+            auxiliar=auxiliar.enlace;
         }
         return 0;
     }
     
      public void actualizar(int dato){
-        Nodo actual = new Nodo();
-        actual=cabeza;
+        Nodo auxiliar = new Nodo();
+        auxiliar=cabeza;
         
-        while(actual != null){
-            if(actual.dato == dato){
+        while(auxiliar != null){
+            if(auxiliar.dato == dato){
                 System.out.println("Ingreso de dato para el nodo actual: ");
                 
             }
-            actual = actual.enlace;
+            auxiliar = auxiliar.enlace;
         }
      }
      
      public void Eliminar(int dato){
-         if (dato == cabeza.getdato()){
-             Nodo aux = this.cabeza;
-             this.cabeza = cabeza.getenlace();
-             aux = null;
-             while
-                     if (dato == aux.getenlace().getdato()){
-                         aux.getenlace(aux.getenlace()getenlace());
-                         temp;
-                         Object temp = null;
-                     }
+         
+         auxiliar= new Nodo();
+         auxiliar = cabeza;
+         cola = new Nodo();
+         cola = null;
+         
+         while(auxiliar != null){
+             if(auxiliar.dato== dato){
+                 if(auxiliar == cabeza){
+                     cabeza = cabeza.enlace;
+                 }else{
+                     cola.enlace = auxiliar.enlace;
+                 }
+             }
+             cola = auxiliar;
+             auxiliar = auxiliar.enlace;
          }
+         
      }
 }
 
