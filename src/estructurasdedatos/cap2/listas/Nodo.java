@@ -18,7 +18,7 @@ public class Nodo {
         this.dato = 0;
         this.enlace = null;
     }
-    public int getValor() {
+    public int getDato() {
         return dato;
     }
 
