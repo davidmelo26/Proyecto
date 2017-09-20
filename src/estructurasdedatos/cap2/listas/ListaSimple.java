@@ -32,47 +32,50 @@ public class ListaSimple {
             cabeza=nuevo;
             cabeza.enlace=null;
             cola=cabeza;
+        }else{
+            cola.enlace=nuevo;
+            nuevo.enlace=null;
+            cola=nuevo;
         }
     }
     
     public void listar (){
-       this.auxiliar = cabeza;
+        Nodo auxiliar = new Nodo();
+        auxiliar = cabeza;
         
-        while
-                this.auxiliar != null;
-                System.out.println(this.auxiliar.getdato());
+        while (auxiliar != null){
+            
+            System.out.println(auxiliar.dato);
+            auxiliar=auxiliar.enlace;
+        }  
     }     
         
     
     public int buscar (int dato){
-        Nodo auxiliar = new Nodo();
-        auxiliar = cabeza;
-        while(auxiliar != null){
-            if (auxiliar.dato==dato){
-                System.out.println("Nodo encontrado");
+        Nodo actual = new Nodo();
+        actual = cabeza;
+        while(actual != null){
+            if (actual.dato==dato){
+                System.out.println("\n Nodo encontrado");
             }
-            auxiliar=auxiliar.enlace;
+            actual=actual.enlace;
         }
         return 0;
     }
     
-     public void actualizar(int posicion,int dato){
-        Nodo aux = this.cabeza;
-        int contador=0;
-         
-        if(posicion<0 || posicion>=cuantosNodos()){
-            System.out.println("La posicion insertada no es correcta");
-        }else{
-            while(aux!=null){
-                if (posicion == contador){
-                    aux.setdato(dato); 
-                }
-                contador++;
-                aux= aux.getenlace();
+     public void actualizar(int dato){
+        Nodo actual = new Nodo();
+        actual=cabeza;
+        
+        while(actual != null){
+            if(actual.dato == dato){
+                System.out.println("Ingreso de dato para el nodo actual: ");
+                
             }
+            actual = actual.enlace;
         }
-         
-    }
+     }
+     
      public void Eliminar(int dato){
          if (dato == cabeza.getdato()){
              Nodo aux = this.cabeza;
