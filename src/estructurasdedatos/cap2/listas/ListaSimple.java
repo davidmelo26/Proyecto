@@ -14,80 +14,78 @@ public class ListaSimple {
 
     private Nodo cabeza;
     private Nodo cola;
+    private Nodo auxiliar;
+    
+    public Void NuevaLista (){
+        this.cabeza = null;
+        this.cola = null;
+        return null;
+        
+    }
     
     public void InsertarNodo(int dato){
         
         Nodo nuevo = new Nodo();
-        nuevo.setDato(dato);
+        nuevo.setdato(dato);
         
-        
-       if (!nuevo == null){
-            nuevoNodo.Enlace = null;
-            cabezaNodo = nuevoNodo;
-            
-       }
+        if(cabeza==null){
+            cabeza=nuevo;
+            cabeza.enlace=null;
+            cola=cabeza;
+        }
     }
     
     public void listar (){
-            
-        for (int i = 0; i<cabeza; i++){
-                System.out.println(this.<nodo[i]);
-            }
-        }
+       this.auxiliar = cabeza;
+        
+        while
+                this.auxiliar != null;
+                System.out.println(this.auxiliar.getdato());
+    }     
+        
     
     public int buscar (int dato){
-        
-        if (Nodo cabeza){
-            
-             }else{
-                 return Nodo;
-                }
-                return 0;
+        Nodo auxiliar = new Nodo();
+        auxiliar = cabeza;
+        while(auxiliar != null){
+            if (auxiliar.dato==dato){
+                System.out.println("Nodo encontrado");
+            }
+            auxiliar=auxiliar.enlace;
         }
+        return 0;
+    }
+    
      public void actualizar(int posicion,int dato){
-        Nodo<T> aux=cabeza;
+        Nodo aux = this.cabeza;
         int contador=0;
          
         if(posicion<0 || posicion>=cuantosNodos()){
             System.out.println("La posicion insertada no es correcta");
         }else{
-            //Recorremos
             while(aux!=null){
                 if (posicion == contador){
-                    //Modificamos el dato directamente
-                    aux.setDato(dato); 
+                    aux.setdato(dato); 
                 }
                 contador++;
-                aux=aux.getEnlace(); //Actualizamos
+                aux= aux.getenlace();
             }
         }
          
     }
-     public void Eliminar(int posicion){
- 
-        Nodo<T> aux= cabeza;
-        Nodo<T> anterior=null;
-        int contador=0;
- 
-        if(posicion<0 || posicion>=cuantosNodos()){
-            System.out.println("La posicion insertada no es correcta");
-        }else{
-            while(aux!=null){
-                if (posicion == contador){
-                    if (cola==null){
-                        cabeza = cabeza.getEnlace();
-                    }else {
-                        //Actualizamos el anterior
-                        cola.setEnlace(aux.getEnlace());
-                    }
-                    aux=null;
-                }else{
-                    cola=aux;
-                    aux=aux.getEnlace();
-                    contador++;
-                }
-            }
-        }
-    }
+     public void Eliminar(int dato){
+         if (dato == cabeza.getdato()){
+             Nodo aux = this.cabeza;
+             this.cabeza = cabeza.getenlace();
+             aux = null;
+             while
+                     if (dato == aux.getenlace().getdato()){
+                         aux.getenlace(aux.getenlace()getenlace());
+                         temp;
+                         Object temp = null;
+                     }
+         }
+     }
 }
+
     
