@@ -11,9 +11,9 @@ package estructurasdedatos.cap2.listas;
  */
 public class Nodo {
     
-    private int dato;
-    private Nodo enlace;
-    private Nodo anterior;
+    int dato;
+    Nodo enlace;
+    Nodo anterior;
     
     
     public void Nodo(){
