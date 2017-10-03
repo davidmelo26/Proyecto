@@ -45,7 +45,7 @@ public class TablaHash {
         for(i=0; i<1; i++){
             incremento+=8;
             for(j=0; j<71; j++){
-                System.out.println("-");
+                System.out.print("-");
             }
             System.out.println();;
             for( j= incremento -8; j< incremento; j++){
@@ -60,12 +60,12 @@ public class TablaHash {
                 if(arreglo[j].equals("-1")){
                     System.out.print("|     ");
                 }else{
-                    System.out.print(String.format("| %3s " + " ", arreglo));
+                    System.out.print(String.format("| %3s " + " ", arreglo[j]));
                 }
             }
             System.out.println("|");
             for(j=0; j<71;j++){
-                System.out.println("-");
+                System.out.print("-");
             }
             System.out.println();
         }
