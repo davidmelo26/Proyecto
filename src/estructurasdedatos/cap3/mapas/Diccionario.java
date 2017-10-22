@@ -13,52 +13,67 @@ package estructurasdedatos.cap3.mapas;
  */
 public class Diccionario<k, v> {
 
-    Mapa<k, v> primero = new Mapa<>();
-
+    Mapa<k, v> diccionario = new Mapa<>();
     public boolean esVacia() {
-        return primero.getKey() == null;
+        return diccionario.getLlave() == null;
     }
 
-    public void add(k key, v value) {
-        Mapa<k, v> nuevo = new Mapa<>(key, value);
+    public void add(k llave, v valor) {
+        Mapa<k, v> nuevo = new Mapa<>(llave, valor);
+        
         if (esVacia()) {
-            this.primero.setKey(key);
-            this.primero.setValue(value);
+        
+            this.diccionario.setLlave(llave);
+            this.diccionario.setValor(valor);
             
         } else {
-            Mapa<k, v> aux = this.primero;
+            Mapa<k, v> aux = this.diccionario;
+            
             while (aux.getSiguiente() != null) {
-                if (aux.getKey() != key) {
+                
+                if (aux.getLlave() != llave) {
+                    
                     aux = aux.getSiguiente();
 
                 } else {
-                    aux.setValue(value);
+                    
+                    aux.setValor(valor);
                 }
             }
+            
             aux.setSiguiente(nuevo);
         }
     }
 
-    public void getValueBykey(k key) {
-        if (primero.getKey() == key) {
-            System.out.println(primero.getValue());
+    public void Valorporllave(k llave) {
+        
+        if (diccionario.getLlave() == llave) {
+            
+            System.out.println(diccionario.getValor());
+            
+            
         } else {
-            Mapa<k, v> aux = primero;
+         
+            Mapa<k, v> aux = diccionario;  
             while (aux.getSiguiente() != null) {
-                if (aux.getKey() == key) {
-                    System.out.println(aux.getValue());
+                
+                if (aux.getLlave() == llave) {
+                    System.out.println(aux.getValor());
+                    
                 } else {
                     aux = aux.getSiguiente();
+                    
                 }
             }
         }
     }
 
-    public void ListItem() {
+    public void mostrar() {
         if (!esVacia()) {
-            Mapa<k, v> aux = this.primero;
+            Mapa<k, v> aux = this.diccionario;
             while (aux != null) {
-                System.out.println("key:" + aux.getKey() + "\n " + "value: " + aux.getValue());
+                
+                System.out.println("Llave:" + aux.getLlave() + "\n " + "Valor: " + aux.getValor());
                 aux = aux.getSiguiente();
             }
         }
