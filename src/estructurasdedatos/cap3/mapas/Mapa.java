@@ -13,32 +13,32 @@ package estructurasdedatos.cap3.mapas;
  */
 public class Mapa <k, v> {
 
-    private k key;// llave
-    private v value;//valor 
+    private k llave;// llave
+    private v valor;//valor 
     private Mapa<k, v> siguiente;
-
-    public Mapa(k key, v value) {
-        this.key = key;
-        this.value = value;
-    }
 
     Mapa() {
     }
-
-    public k getKey() {
-        return key;
+    
+    public Mapa(k llave, v valor) {
+        this.llave = llave;
+        this.valor = valor;
     }
 
-    public void setKey(k key) {
-        this.key = key;
+    public k getLlave() {
+        return llave;
     }
 
-    public v getValue() {
-        return value;
+    public void setLlave(k llave) {
+        this.llave = llave;
     }
 
-    public void setValue(v value) {
-        this.value = value;
+    public v getValor() {
+        return valor;
+    }
+
+    public void setValor(v valor) {
+        this.valor = valor;
     }
 
     public Mapa getSiguiente() {
