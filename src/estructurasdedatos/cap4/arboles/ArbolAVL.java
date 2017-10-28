@@ -11,4 +11,14 @@ package estructurasdedatos.cap4.arboles;
  */
 public class ArbolAVL {
     
+     private int dato;
+    
+    private NodoAVL hijoDerecho;
+    private NodoAVL hijoIzquierdo;
+    private NodoAVL FactorEquilibrio;
+    
+    public ArbolAVL (int dato){
+        this.dato = dato;
+        
+    }
 }
