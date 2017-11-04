@@ -10,5 +10,12 @@ package estructurasdedatos.cap5.grafos;
  * @author tusk
  */
 public class Grafo {
+        List<Vertice> vertice = new ArrayList<Vertice> ();
+        int [][]matrizAdyascencia;
     
+    
+    public void insertar(){
+                }
+             
+    }
 }
