@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package grafo;
+package estructurasdedatos.cap5.grafos;
 
 /**
  *
@@ -12,18 +12,44 @@ package grafo;
 public class Vertice {
     
     private String dato;
+    int posicion;
+    public Vertice siguiente;
 
     /**
-     * @return the dato
+     * constructor agregar al final
+     * 
+     * @param posCiudad
+     * @param dato
+     */
+    public Vertice(int posCiudad, String dato){
+        this.dato = dato;
+        this.posicion = posCiudad;
+    }
+    
+    /**
+     * constructor agrega al inicio
+     * @param posCiudad
+     * @param ciudad
+     * @param proximo
+     */
+    public Vertice (int posCiudad, String ciudad, Vertice proximo){
+        dato = ciudad;
+        posicion = posCiudad;
+        siguiente = proximo;
+    }
+    
+    /**
+     * @return dato
      */
     public String getDato() {
         return dato;
     }
 
     /**
-     * @param dato the dato to set
+     * @param dato el dato a set
      */
     public void setDato(String dato) {
         this.dato = dato;
     }
+
 }
