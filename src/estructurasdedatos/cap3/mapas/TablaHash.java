@@ -69,14 +69,5 @@ public class TablaHash {
             }
             System.out.println();
         }
-    }
-    public static void main(String[] args){
-        
-        TablaHash hash= new TablaHash(8);
-        String[] elementos= {"20","33", "21", "10", "12","14","56", "100"};
-        hash.funcionHash(elementos, hash.arreglo);
-        
-        hash.mostrar();
-    }
-    
+    }    
 }
