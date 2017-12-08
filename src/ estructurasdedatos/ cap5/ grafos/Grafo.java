@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package estructurasdedatos.cap5.grafos;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -26,14 +25,11 @@ public class Grafo{
     private AristaDirigido primeroArista = null;
     private AristaDirigido ultimoArista = null;
     private long matrizAdyacencia[][];//Utilizado para el metodo insertarMatrizEnFloyd
-
     Scanner opcion = new Scanner(System.in);
     Scanner nombreCiudad = new Scanner(System.in);//Entrada de ciudades (vertices)
-    
     public boolean esVacia() {
         return primero == null;
-    }
-    
+    } 
     public int getmaxVertices() {
         return maxVertices;
     }
